@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainController">
+   <children>
+      <Label id="subheadingExcel_lbl" layoutX="310.0" layoutY="26.0" styleClass="subheading" text="Excel Info">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label id="sheet_lbl" layoutX="64.0" layoutY="108.0" text="Sheet Name:  " />
+      <Label id="rows_lbl" layoutX="64.0" layoutY="143.0" text="Rows start at: " />
+      <Label id="subheadingGoogleCal_lbl" layoutX="276.0" layoutY="216.0" styleClass="subheading" text="Google Calendar Info">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label id="date_txt" layoutX="65.0" layoutY="340.0" text="Column to insert to End Date: " />
+      <Label layoutX="67.0" layoutY="440.0" text="Column to insert to Description: " />
+      <Label layoutX="67.0" layoutY="472.0" text="Column to insert to Location: " />
+      <TextField fx:id="rowsBeginning_text" layoutX="270.0" layoutY="139.0" prefHeight="25.0" prefWidth="47.0" />
+      <TextField fx:id="endDateCol_txt" layoutX="272.0" layoutY="332.0" prefHeight="25.0" prefWidth="47.0" />
+      <TextField fx:id="descriptionCol_txt" layoutX="273.0" layoutY="436.0" prefHeight="25.0" prefWidth="32.0" />
+      <TextField fx:id="locationCol_txt" layoutX="272.0" layoutY="468.0" prefHeight="25.0" prefWidth="32.0" />
+      <Button id="options_btn" fx:id="options_btn" layoutX="503.0" layoutY="480.0" mnemonicParsing="false" onAction="#NextStage" text="More Options" />
+      <Button fx:id="submit_btn" layoutX="503.0" layoutY="436.0" mnemonicParsing="false" onAction="#submitInformation" prefHeight="25.0" prefWidth="90.0" text="Submit" />
+      <Label fx:id="file_txt" layoutX="64.0" layoutY="71.0" text="File Location:" />
+      <Button fx:id="file_btn" layoutX="270.0" layoutY="67.0" mnemonicParsing="false" onAction="#openFileExplorer" prefHeight="25.0" prefWidth="149.0" text="Open File Explorer" />
+      <Label layoutX="64.0" layoutY="181.0" text="Rows end at:" />
+      <TextField fx:id="rowsEnding_text" layoutX="270.0" layoutY="177.0" prefHeight="25.0" prefWidth="47.0" />
+      <Label fx:id="fileStatus_txt" layoutX="521.0" layoutY="84.0" textFill="#bc1313" />
+      <ComboBox fx:id="cb_EndDate" layoutX="345.0" layoutY="332.0" prefHeight="25.0" prefWidth="139.0" promptText="Date Format" visibleRowCount="2" />
+      <ComboBox fx:id="cb_StartDate" layoutX="345.0" layoutY="297.0" prefHeight="25.0" prefWidth="139.0" promptText="Date Format" visibleRowCount="2" />
+      <TextField fx:id="startDateCol_txt" layoutX="272.0" layoutY="297.0" prefHeight="25.0" prefWidth="47.0" />
+      <Label layoutX="64.0" layoutY="305.0" text="Column to insert to Start Date: " />
+      <Label layoutX="65.0" layoutY="268.0" text="Column to insert to Title:" />
+      <TextField fx:id="titleCol_txt" layoutX="273.0" layoutY="264.0" prefHeight="25.0" prefWidth="47.0" />
+      <TextArea fx:id="warning_Area" editable="false" layoutX="96.0" layoutY="522.0" prefHeight="87.0" prefWidth="497.0" promptText="Error Message Area" styleClass="Error-text" stylesheets="@../../resources/MainForm.css" wrapText="true" />
+      <Label layoutX="64.0" layoutY="372.0" text="Column to insert Start Time: " />
+      <Label layoutX="67.0" layoutY="408.0" text="Column to insert End Time: " />
+      <TextField fx:id="startTime_txt" layoutX="272.0" layoutY="364.0" prefHeight="25.0" prefWidth="47.0" />
+      <TextField fx:id="endTime_txt" layoutX="273.0" layoutY="400.0" prefHeight="25.0" prefWidth="47.0" />
+      <ComboBox fx:id="cb_startTime" layoutX="345.0" layoutY="364.0" prefHeight="25.0" prefWidth="139.0" promptText="Time Format" />
+      <ComboBox fx:id="cb_endTime" layoutX="345.0" layoutY="400.0" prefHeight="25.0" prefWidth="139.0" promptText="Time Format" />
+      <TextField fx:id="secondDescriptionCol_txt" layoutX="345.0" layoutY="436.0" prefHeight="25.0" prefWidth="32.0" />
+      <ComboBox fx:id="cb_sheets" layoutX="270.0" layoutY="104.0" prefWidth="150.0" promptText="Sheets In WorkBook" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

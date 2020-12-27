@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="232.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.IntroController">
+   <children>
+      <Label id="Title_lbl" layoutX="142.0" layoutY="36.0" text="Excel To Google Calendar Events">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Button fx:id="enter_btn" layoutX="77.0" layoutY="116.0" mnemonicParsing="false" onAction="#NextStage" prefHeight="25.0" prefWidth="127.0" text="Enter" />
+      <Label contentDisplay="CENTER" layoutX="243.0" layoutY="90.0" prefHeight="101.0" prefWidth="316.0" text="About: This Desktop Application purpose is to insert Excel cells into your Google Calendar without having to manually input each one by one." wrapText="true" />
+      <Button fx:id="clearGmailAcct_btn" layoutX="435.0" layoutY="166.0" mnemonicParsing="false" onAction="#clearGmailAcct" text="Clear Gmail Account" />
+   </children>
+</AnchorPane>
